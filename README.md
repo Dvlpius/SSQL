@@ -1,2 +1,0 @@
-# SSQL
-SSQl[SmartSQL] is SQL Programming Language by new Feature for ApplicationIntegration 
