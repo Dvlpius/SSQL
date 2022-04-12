@@ -1,1 +1,55 @@
+///[FORMAT]///////////////////////////////////////////////////////
+///Des=Format Query data to popular formats 
+///    [XML,JSON,CByte,HEX,Oct,Bin,Array,VArray,HTML,EXCEL,FBX,etc]
+////////////////////////////////////////////////////////////
 
+
+
+///Example 0///////////////////////////////////////////////
+public void Example_0()
+{
+  print Qry("SELECT * FROM _History FORMAT Array");
+}
+///Result:////////////
+///[1]=ASUS
+///[2]=AZUR
+///[3]=Tesla
+//////////////////////
+
+
+
+///Example 1///////////////////////////////////////////////
+public void Example_1()
+{
+  print Qry("SELECT * FROM _History FORMAT VArray");
+}
+///Result:////////////
+///["PC"]=ASUS
+///["Cloud"]=AZUR
+///["Automobil"]=Tesla
+//////////////////////
+
+
+
+///Example 2///////////////////////////////////////////////
+public void Example_2()
+{
+  print Qry("SELECT * FROM _History FORMAT Hex");
+}
+///Result:////////////
+///0f,ff,1f,f5,e7,c2,b8
+///cd,cf,6c,8b,e7,c5,2d
+///bf,ff,5f,f5,ef,cb,5e
+//////////////////////
+
+
+
+///Example 3///////////////////////////////////////////////
+public void Example_3()
+{
+  print Qry("SELECT * FROM _History FORMAT FBX");
+}
+///Result:////////////////////////////////////////////////
+///FBX::this format use in 3D_Mesh models for EGraphic;
+///EGraphic=>Graphic for Engineering Projects
+//////////////////////////////////////////////////////////
