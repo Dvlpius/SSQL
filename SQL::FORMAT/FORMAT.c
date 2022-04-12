@@ -45,9 +45,9 @@ public void Example_2()
 
 
 ///Example 3///////////////////////////////////////////////
-public void Example_3()
+public 3D_Mesh Example_3()
 {
-  print Qry("SELECT * FROM _History FORMAT FBX");
+  return Qry("SELECT * FROM _History FORMAT FBX");
 }
 ///Result://///////////////////////////////////////////////////////////////////////
 ///FBX::this format use in (3DGUI for SoftwareGUI) & (3D_Mesh models for EGraphic);
