@@ -22,3 +22,18 @@ public void Qry("SELECT * FROM _History WHERE Date='Sunday'"){
     }
 }    
 
+
+
+///[Example_3]/////////////////////////////////////////////////////////
+Qry("SELECT FAV FROM _History WHERE Date='Sunday'"){
+    Qry("SELECT * FROM ${QryHdl.Parent} WHERE FavRank>90%"){
+        Qry("SELECT {QryHdl.Data} FROM ${QryHdl.Parent} GREEP _odd_"){
+            Qry("SORT {QryHdl.Data} DES _DATE_"){
+                Qry("FORMAT {QryHdl.Data} XML")
+                    Http.Snd(QryHdl.Data);
+                {
+            {    
+        }
+    }
+}    
+
