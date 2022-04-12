@@ -3,7 +3,7 @@
 ///    send handle to inner script , no need external scripts
 ///QryHdl=return data recieved from query directl like event handle and
 ///       no need external variable similar this.
-///QryHdl==this;
+///QryHdl==QueryHandle==this==EventHandle;
 /////////////////////////////////////////////////////////////////////
 
 
